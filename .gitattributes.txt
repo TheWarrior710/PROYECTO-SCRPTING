@@ -1,0 +1,4 @@
+*text=auto
+
+*.jpj binary
+*.png binary
