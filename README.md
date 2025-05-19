@@ -10,7 +10,6 @@ Jhohan Nicolas Sedano Correa Id: 000522547
 Armando Marulanda Id : 000350736
 
 
-Juan Jose Becerra Id : 000517586
 
 #### Descripcion : 
 
