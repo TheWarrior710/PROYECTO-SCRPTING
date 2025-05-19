@@ -59,3 +59,4 @@ Para definir mejor la arquitectura del proyecto, se deben resolver los siguiente
 
 •	Armando Marulanda Rua - ID: 000350736
 •	Jhohan Nicolás Sedano - ID: 000522547
+• Juan Jose Becerra - ID : 000517586
