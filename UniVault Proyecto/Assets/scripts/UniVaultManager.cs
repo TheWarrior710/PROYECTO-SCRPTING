@@ -10,6 +10,8 @@ public class UniVaultManager : MonoBehaviour
     
     public GameObject mainMenu;
     public GameObject reminderPanel;
+    public Transform fileListParent; 
+    public GameObject fileItemPrefab; 
 
 
     public TextMeshProUGUI notesText;
@@ -24,6 +26,36 @@ public class UniVaultManager : MonoBehaviour
         LoadNotes();
         InvokeRepeating("ShowReminder", 30f, 60f); 
     }
+
+    private string filesFolderPath;
+
+    public void AddFile()
+    {
+#if UNITY_EDITOR
+        string path = UnityEditor.EditorUtility.OpenFilePanel("Seleccionar archivo", "", "*");
+        if (!string.IsNullOrEmpty(path))
+        {
+            string destPath = Path.Combine(filesFolderPath, Path.GetFileName(path));
+            File.Copy(path, destPath, true);
+            LoadFiles();
+        }
+#endif
+    }
+
+    void LoadFiles()
+    {
+        foreach (Transform child in fileListParent)
+            Destroy(child.gameObject);
+
+        string[] files = Directory.GetFiles(filesFolderPath);
+        foreach (string filePath in files)
+        {
+            GameObject fileItem = Instantiate(fileItemPrefab, fileListParent);
+            fileItem.GetComponentInChildren<TextMeshProUGUI>().text = Path.GetFileName(filePath);
+            
+        }
+    }
+
 
 
 
@@ -53,5 +85,8 @@ public class UniVaultManager : MonoBehaviour
     {
         reminderPanel.SetActive(false);
     }
+
+
+
 
 }
