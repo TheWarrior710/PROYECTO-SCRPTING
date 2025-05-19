@@ -7,10 +7,10 @@ using System.IO;
 
 public class UniVaultManager : MonoBehaviour
 {
-    public TMP_InputField pinInput;
+    
     public GameObject mainMenu;
-    public GameObject pinScreen;
-    private string correctPin = "1234";
+    public GameObject reminderPanel;
+
 
     public TextMeshProUGUI notesText;
     public TMP_InputField notesInput;
@@ -20,21 +20,12 @@ public class UniVaultManager : MonoBehaviour
     void Start()
     {
         notesFilePath = Path.Combine(Application.persistentDataPath, "notes.txt");
+        mainMenu.SetActive(true);
         LoadNotes();
+        InvokeRepeating("ShowReminder", 30f, 60f); 
     }
 
-    public void CheckPin()
-    {
-        if (pinInput.text == correctPin)
-        {
-            pinScreen.SetActive(false);
-            mainMenu.SetActive(true);
-        }
-        else
-        {
-            Debug.Log("PIN incorrecto");
-        }
-    }
+
 
     public void SaveNotes()
     {
@@ -49,4 +40,18 @@ public class UniVaultManager : MonoBehaviour
             notesText.text = File.ReadAllText(notesFilePath);
         }
     }
+
+
+    
+
+    void ShowReminder()
+    {
+        reminderPanel.SetActive(true);
+    }
+
+    public void CloseReminder()
+    {
+        reminderPanel.SetActive(false);
+    }
+
 }
