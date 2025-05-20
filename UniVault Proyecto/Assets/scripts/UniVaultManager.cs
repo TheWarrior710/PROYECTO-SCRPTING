@@ -7,10 +7,10 @@ using System.IO;
 
 public class UniVaultManager : MonoBehaviour
 {
-    
+    public Transform fileListParent;
+
     public GameObject mainMenu;
     public GameObject reminderPanel;
-    public Transform fileListParent; 
     public GameObject fileItemPrefab; 
 
 
@@ -18,16 +18,22 @@ public class UniVaultManager : MonoBehaviour
     public TMP_InputField notesInput;
 
     private string notesFilePath;
+    private string filesFolderPath;
 
     void Start()
     {
+
+        filesFolderPath = Path.Combine(Application.persistentDataPath, "Archivos");
+        Directory.CreateDirectory(filesFolderPath);
+        LoadFiles();
+
         notesFilePath = Path.Combine(Application.persistentDataPath, "notes.txt");
         mainMenu.SetActive(true);
         LoadNotes();
         InvokeRepeating("ShowReminder", 30f, 60f); 
     }
 
-    private string filesFolderPath;
+  
 
     public void AddFile()
     {
@@ -51,8 +57,10 @@ public class UniVaultManager : MonoBehaviour
         foreach (string filePath in files)
         {
             GameObject fileItem = Instantiate(fileItemPrefab, fileListParent);
-            fileItem.GetComponentInChildren<TextMeshProUGUI>().text = Path.GetFileName(filePath);
-            
+            FileButton fileButton = fileItem.GetComponent<FileButton>();
+            fileButton.SetFile(filePath);
+
+
         }
     }
 
