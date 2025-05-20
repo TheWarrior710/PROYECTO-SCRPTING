@@ -441,6 +441,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/scripts/ArchivoBuscador.cs"
+"Assets/scripts/EscenaInicio.cs"
 "Assets/scripts/FileButton.cs"
 "Assets/scripts/UniVaultManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

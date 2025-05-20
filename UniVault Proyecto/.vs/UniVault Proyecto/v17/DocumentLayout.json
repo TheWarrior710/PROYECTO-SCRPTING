@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25746EDD-06A6-78A3-EFAA-F01283115896}|Assembly-CSharp.csproj|d:\\unity poyectos\\proyecto-scrpting\\univault proyecto\\assets\\scripts\\filebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{25746EDD-06A6-78A3-EFAA-F01283115896}|Assembly-CSharp.csproj|D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\assets\\scripts\\filebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25746EDD-06A6-78A3-EFAA-F01283115896}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\filebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25746EDD-06A6-78A3-EFAA-F01283115896}|Assembly-CSharp.csproj|D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\assets\\scripts\\escenainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25746EDD-06A6-78A3-EFAA-F01283115896}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\escenainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25746EDD-06A6-78A3-EFAA-F01283115896}|Assembly-CSharp.csproj|d:\\unity poyectos\\proyecto-scrpting\\univault proyecto\\assets\\scripts\\archivobuscador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25746EDD-06A6-78A3-EFAA-F01283115896}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\archivobuscador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25746EDD-06A6-78A3-EFAA-F01283115896}|Assembly-CSharp.csproj|D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\assets\\scripts\\univaultmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArchivoBuscador.cs",
+              "DocumentMoniker": "D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\Assets\\scripts\\ArchivoBuscador.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\ArchivoBuscador.cs",
+              "ToolTip": "D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\Assets\\scripts\\ArchivoBuscador.cs",
+              "RelativeToolTip": "Assets\\scripts\\ArchivoBuscador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T10:54:19.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EscenaInicio.cs",
+              "DocumentMoniker": "D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\Assets\\scripts\\EscenaInicio.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\EscenaInicio.cs",
+              "ToolTip": "D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\Assets\\scripts\\EscenaInicio.cs",
+              "RelativeToolTip": "Assets\\scripts\\EscenaInicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T10:04:15.607Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -35,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UniVaultManager.cs",
               "DocumentMoniker": "D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\Assets\\scripts\\UniVaultManager.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\UniVaultManager.cs",
               "ToolTip": "D:\\Unity Poyectos\\PROYECTO-SCRPTING\\UniVault Proyecto\\Assets\\scripts\\UniVaultManager.cs",
               "RelativeToolTip": "Assets\\scripts\\UniVaultManager.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwEAAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T01:42:45.998Z",
               "EditorCaption": ""

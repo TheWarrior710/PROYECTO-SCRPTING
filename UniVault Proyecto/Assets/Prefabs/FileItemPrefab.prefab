@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 8061205018876028604}
   - component: {fileID: 799041052780872351}
   - component: {fileID: 9194842957786621292}
+  - component: {fileID: 2500275603181505508}
   m_Layer: 5
   m_Name: FileItemPrefab
   m_TagString: Untagged
@@ -311,7 +312,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -740, y: 291}
-  m_SizeDelta: {x: 300, y: 60}
+  m_SizeDelta: {x: 350, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5074656509532530432
 CanvasRenderer:
@@ -409,6 +410,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fileNameText: {fileID: 1150537203185867435}
   deleteButton: {fileID: 8979091250639483071}
+--- !u!114 &2500275603181505508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323280047832086592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 350
+  m_PreferredHeight: 60
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &8255989360960899033
 GameObject:
   m_ObjectHideFlags: 0

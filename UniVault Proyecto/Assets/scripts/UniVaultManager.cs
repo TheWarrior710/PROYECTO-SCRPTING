@@ -53,12 +53,16 @@ public class UniVaultManager : MonoBehaviour
         foreach (Transform child in fileListParent)
             Destroy(child.gameObject);
 
+        FindObjectOfType<ArchivoBuscador>().LimpiarLista();
+
         string[] files = Directory.GetFiles(filesFolderPath);
         foreach (string filePath in files)
         {
             GameObject fileItem = Instantiate(fileItemPrefab, fileListParent);
+            fileItem.name = Path.GetFileName(filePath);
             FileButton fileButton = fileItem.GetComponent<FileButton>();
             fileButton.SetFile(filePath);
+            FindObjectOfType<ArchivoBuscador>().RegistrarBoton(fileItem);
 
 
         }
