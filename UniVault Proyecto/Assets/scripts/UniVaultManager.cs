@@ -7,6 +7,9 @@ using System.IO;
 
 public class UniVaultManager : MonoBehaviour
 {
+    [SerializeField] private ArchivoBuscador buscador;
+
+
     public Transform fileListParent;
 
     public GameObject mainMenu;
@@ -53,18 +56,20 @@ public class UniVaultManager : MonoBehaviour
         foreach (Transform child in fileListParent)
             Destroy(child.gameObject);
 
-        FindObjectOfType<ArchivoBuscador>().LimpiarLista();
+        buscador.LimpiarLista();
+
 
         string[] files = Directory.GetFiles(filesFolderPath);
         foreach (string filePath in files)
         {
             GameObject fileItem = Instantiate(fileItemPrefab, fileListParent);
+
             fileItem.name = Path.GetFileName(filePath);
+
             FileButton fileButton = fileItem.GetComponent<FileButton>();
             fileButton.SetFile(filePath);
-            FindObjectOfType<ArchivoBuscador>().RegistrarBoton(fileItem);
 
-
+            buscador.RegistrarBoton(fileItem);
         }
     }
 
