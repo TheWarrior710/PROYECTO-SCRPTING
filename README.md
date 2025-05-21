@@ -1,4 +1,4 @@
-## 🗃️ UniVault – Proyecto de Scripting en Unity
+##  UniVault – Proyecto de Scripting en Unity
 
 **Integrantes:**
 - Jhohan Nicolás Sedano Correa — ID: 000522547  
@@ -16,7 +16,7 @@ Se diseñó una interfaz intuitiva y funcional para facilitar la gestión acadé
 
 ##  Funcionalidades implementadas
 
-### 🎬 1. Pantalla de inicio
+###  1. Pantalla de inicio
 - Escena inicial con botón “Entrar”.
 - Navega a la escena principal de la aplicación.
 
