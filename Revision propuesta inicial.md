@@ -1,62 +1,91 @@
-# Introducción
+#  Introducción
+
+En el entorno universitario, la organización de archivos y tareas es clave para el éxito académico. Sin embargo, muchos estudiantes enfrentan dificultades para gestionar sus documentos, recordar fechas importantes y mantener el orden en su información.  
+
+**UniVault** es una aplicación desarrollada en **Unity** que busca abordar este problema mediante una plataforma intuitiva que permite:
+- Almacenar y organizar archivos por carpetas
+- Establecer alarmas personalizadas y recordatorios
+- Tomar notas rápidas
+- Personalizar la experiencia del usuario
+
+Todo esto, en una interfaz unificada, pensada para estudiantes universitarios.
+
+---
+
+##  Objetivo
+
+Desarrollar una aplicación funcional y local que facilite la gestión de tareas y documentos académicos, con funcionalidades clave como:
+
+- Almacenamiento de archivos en carpetas por materia o semestre
+- Alarmas programadas por el usuario
+- Notas rápidas y búsqueda por nombre
+- Personalización básica de la experiencia
+- Seguridad mediante PIN de acceso (opcional en la versión final)
+
+---
+
+##  Funcionalidades principales
+
+-  **Gestión de archivos y carpetas**  
+  Organización de archivos en una interfaz tipo explorador. Subida desde el dispositivo y visualización directa.
+
+-  **Recordatorios y alarmas personalizadas**  
+  El usuario puede programar alarmas con texto personalizado que se activan tras cierto tiempo.
+
+-  **Notas rápidas**  
+  Espacio para guardar apuntes, con opción de recuperación y edición rápida.
+
+- **Buscador de archivos**  
+  Filtro dinámico que permite encontrar archivos por nombre.
+
+-  **Personalización de interfaz (idea futura)**  
+  Avatares y fondos predefinidos seleccionables por el usuario.
 
 
-En el entorno universitario, la organización de archivos y tareas es clave para el éxito académico. Sin embargo, muchos estudiantes enfrentan dificultades para gestionar sus documentos, recordar fechas importantes y mantener el orden en su información. UniVault es una aplicación diseñada para abordar este problema, ofreciendo una plataforma intuitiva para almacenar y organizar archivos, establecer recordatorios y tomar notas rápidas, todo en un solo lugar.
+---
 
+##  Correcciones y definiciones del proyecto
 
-## Objetivo
+### 1. ¿La aplicación funcionará de forma local o conectada a un servidor?
+- Funciona de forma **totalmente local**. No requiere conexión a internet.
 
+### 2. ¿Los recordatorios incluirán notificaciones push?
+- No. Son alarmas **programadas** por tiempo que activan paneles emergentes.
 
+### 3. ¿Qué servicio se usa para almacenamiento de archivos?
+- Se utiliza el **almacenamiento local del sistema operativo**, vía rutas internas.
 
-Desarrollar una aplicación que facilite la gestión de documentos y tareas universitarias mediante una interfaz intuitiva y funciones clave como almacenamiento de archivos, recordatorios, notas rápidas, personalización de avatares y seguridad con acceso mediante PIN.
-Funcionalidades
+### 4. ¿Cómo se maneja la personalización de avatares/fondos?
+- Por ahora, se ofrecen **opciones predefinidas**. Futuras versiones permitirán cargar imágenes propias.
 
+### 5. ¿Cómo se valida el acceso mediante PIN?
+- Se implementó un sistema de verificación de PIN. En la versión actual, el PIN fue eliminado para simplificar el flujo por sugerencia docente.
 
-•	Gestión de carpetas y archivos: Creación de carpetas organizadas por materia o semestre, con la opción de subir archivos.
-•	Recordatorios: alarmas programadas por el usuario.
-•	Notas rápidas: Espacio dentro de cada carpeta para tomar apuntes.
-•	Personalización: Selección de avatares y fondos para mejorar la experiencia del usuario.
-•	Seguridad con PIN: Protección del acceso a la aplicación para mayor privacidad.
+### 6. ¿El usuario puede definir carpetas personalizadas?
+- Sí, el usuario puede **crear sus propias carpetas**, no hay estructura predeterminada.
 
+---
 
-Correcciones propuesta anterior
-Para definir mejor la arquitectura del proyecto, se deben resolver los siguientes aspectos:
+## 🛠 Tecnologías utilizadas
 
+| Componente | Herramienta actual |
+|------------|---------------------|
+|  Motor principal | Unity |
+| 🖼UI | Unity Canvas + TextMesh Pro |
+|  Lógica | C# (programación orientada a componentes) |
+|  Gestión de archivos | Sistema local (con `StandaloneFileBrowser` en builds) |
+|  Audio | AudioClip + AudioSource para alarmas |
+|  Base de datos | *[No implementada]* (idea futura: SQLite o PlayerPrefs para guardar configuraciones) |
 
-1.	¿La aplicación funcionará de forma local o se conectará a un servidor?
--	La aplicación funcionara de forma local, ya que no es necesario conectarla a un servidor.
+---
 
-2.	¿Los recordatorios serán alarmas programadas o incluirán notificaciones push?
--	Los recordatorios son programados dependiendo de que feche y hora necesite el usuario acordarse.
+##  Integrantes del grupo
 
-3.	¿Qué servicio se usará para el almacenamiento de archivos?
--	Para el almacenamiento de archivos se utilizará el propio almacenamiento del dispositivo.
+- **Armando Marulanda Rua** – ID: 000350736  
+- **Jhohan Nicolás Sedano Correa** – ID: 000522547
 
-4.	¿Los avatares y fondos serán predefinidos o se permitirá su creación personalizada?
--	Serán predefinidos para que el usuario solo tenga que escoger el que mas le guste, pero una idea es que se puedan subir imágenes para que el usuario las pueda poner de fondo o de foto de usuario.
+---
 
-5.	¿Cómo se validará la autenticación mediante PIN?
--	Se validará a través de un PIN que se definirá cuando inicie la sesión.
+##  Notas finales
 
-6.	¿El usuario podrá definir sus propias carpetas o habrá una estructura predeterminada?
--	El usuario crea las carpetas que necesite, así que no habrá estructura predeterminada
-
-## Tecnologías Por Utilizar
-
-
-##### Las herramientas específicas se definirán conforme avance el desarrollo, evaluando cuáles se ajustan mejor a los requerimientos del proyecto. Sin embargo, algunas opciones preliminares incluyen:
-
-
-•	Base de datos: SQLite para almacenamiento local.
-
-•	Framework de desarrollo: Flutter para compatibilidad en Android e iOS.
-
-•	Gestión de preferencias: SharedPreferences para almacenamiento del PIN.
-
-•	Diseño de interfaz: Se utilizara unity para realizar todo el diseño y para lanzar el ejecutable
-
-#### Integrantes del Grupo
-
-•	Armando Marulanda Rua - ID: 000350736
-•	Jhohan Nicolás Sedano - ID: 000522547
-• Juan Jose Becerra - ID : 000517586
+El proyecto fue desarrollado como parte de la asignatura **Scripting**. Las funcionalidades fueron priorizadas con base en su utilidad académica, y se espera expandirlas en versiones futuras con almacenamiento persistente, interfaz adaptable, y sincronización en la nube.
