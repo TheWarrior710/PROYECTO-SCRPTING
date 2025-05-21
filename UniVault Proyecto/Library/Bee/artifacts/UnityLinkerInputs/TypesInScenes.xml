@@ -1,12 +1,12 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="AlarmManager" preserve="nothing"/>
 		<type fullname="ArchivoBuscador" preserve="nothing"/>
 		<type fullname="EscenaInicio" preserve="nothing"/>
 		<type fullname="FileButton" preserve="nothing"/>
 		<type fullname="UniVaultManager" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.2D.Animation.Runtime">
-		<type fullname="UnityEngine.U2D.Animation.BufferManager" preserve="nothing"/>
 		<type fullname="UnityEngine.U2D.Animation.DeformationManager" preserve="nothing"/>
 		<type fullname="UnityEngine.U2D.Animation.DeformationManagerUpdater" preserve="nothing"/>
 	</assembly>
@@ -101,8 +101,11 @@
 		<type fullname="UnityEditor.TagManager" preserve="nothing"/>
 		<type fullname="UnityEditor.TimeManager" preserve="nothing"/>
 		<type fullname="UnityEditor.VFXManager" preserve="nothing"/>
+		<type fullname="UnityEngine.Audio.AudioResource" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioClip" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioSource" preserve="nothing"/>
 		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
 		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
